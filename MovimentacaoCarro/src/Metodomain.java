@@ -9,6 +9,7 @@ public class Metodomain {
 
 
         do { 
+            System.out.println("======================");
             System.out.println("1 - Ligar o carro ");
             System.out.println("2 - Desligar o carro");
             System.out.println("3 - Acelerar");
@@ -25,12 +26,14 @@ public class Metodomain {
             }
             switch (opcao){
                 case 1 -> carro.ligar();
-                case 2 -> System.out.println("Opção 2 selecionada");
+                case 2 -> carro.desligar();
                 case 3 -> carro.acelerar();
-                case 4 -> System.out.println("Opção 4 selecionada");
-                case 5 -> System.out.println("Opção 5 selecionada");
-                case 6 -> System.out.println("Opção 6 selecionada");
-                case 7 -> System.out.println("Opção 7 selecionada");
+                case 4 -> carro.desacelerar();
+                case 5 -> {System.out.print("Digite a direção (esquerda/direita): ");
+                    carro.virar(String.valueOf(scanner.next()));
+                }
+                case 6 -> System.out.println("Velocidade atual: " + carro.getVelocidade() + " km/h");
+                case 7 -> carro.marchar();
                 
             }
             
