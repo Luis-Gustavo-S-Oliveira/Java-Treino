@@ -12,15 +12,15 @@ public class Iphonemain {
         String opoticao = scanner.nextLine();
         
         switch (opoticao) {
-            case "1":
+            case "1" -> {
                 System.out.println("Você escolheu Música.");
                     do { 
-                        System.out.print("Escolha uma música para tocar (ou 'voltar' para o menu principal): ");
+                        System.out.print("Escolha uma música para tocar (ou '1' para voltar para o menu principal): ");
                         String musicaEscolhida = scanner.nextLine().toLowerCase().trim();
                         Musica musica = new Musica();
                             musica.Entrar();
                             System.out.println(musica.selecionarMusica(musicaEscolhida));
-                            if (musicaEscolhida.equals("voltar")) {
+                            if (musicaEscolhida.equals("1")) {
                                 break;
                             }else if (!musicaEscolhida.equals("voltar")) {
                                     System.out.print("Digite 'tocar' para tocar a música, 'pausar' para pausar ou 'sair' para voltar: ");
@@ -43,12 +43,12 @@ public class Iphonemain {
                         break;
                     }
                     while (true);
-            case "2":
+            }    
+            case "2"->
                 System.out.println("Você escolheu Internet.");
-            case "3":
+            case "3"->
                 System.out.println("Você escolheu Telefone.");
-                break;
-            default:
+            default->
                 throw new AssertionError();
         }
         if (opoticao.equals("sair")) {
