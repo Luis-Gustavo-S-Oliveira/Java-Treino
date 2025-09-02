@@ -38,5 +38,9 @@ public class OrdenacaoNumeros {
             }
         } 
     }
+
+    public List<Integer> getNumeros() {
+        return numeros;
+    }
 }
 

@@ -8,9 +8,13 @@ public class Main {
         ordenacao.adicionarNumero(20);
         ordenacao.adicionarNumero(3);
 
+        System.out.println("Números antes da ordenação:");
+        System.out.println(ordenacao.getNumeros()); 
         ordenacao.ordenarAscendente();
-        System.out.println("Números em ordem ascendente: " + ordenacao.numeros);
+        System.out.println("Números após a ordenação ascendente:");
+        System.out.println(ordenacao.getNumeros());
         ordenacao.ordenarDescendente();
-        System.out.println("Números em ordem descendente: " + ordenacao.numeros);
+        System.out.println("Números após a ordenação descendente:");
+        System.out.println(ordenacao.getNumeros());
 }
 }
