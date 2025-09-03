@@ -1,4 +1,4 @@
-package set;
+package set.basico;
 import java.util.*;
 
 public class ConjuntoPalavrasUnicas {

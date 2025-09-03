@@ -1,4 +1,4 @@
-package set;
+package set.basico;
 
 public class basico {
     public static void main(String[] args) {
