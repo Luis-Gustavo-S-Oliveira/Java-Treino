@@ -1,4 +1,4 @@
-package set.basico;
+package set.pesquisa;
 
 import set.pesquisa.ListaTarefas;
 
@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
 
     ListaTarefas listaTarefas = new ListaTarefas();
-
    
     listaTarefas.adicionarTarefa("estudar Java");
     listaTarefas.adicionarTarefa("Fazer exercícios físicos");
